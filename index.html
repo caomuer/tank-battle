@@ -366,7 +366,7 @@
       playExplosion();
       if (tank === player) {
         lives--;
-        if (lives < 0) {
+        if (lives <= 0) {
           gameOver('游戏结束');
         } else {
           respawnPlayer();
